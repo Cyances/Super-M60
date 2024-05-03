@@ -13,7 +13,7 @@ using MelonLoader;
 using NWH.VehiclePhysics;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(SuperM60Mod), "Super M60", "1.0.0", "Cyance")]
+[assembly: MelonInfo(typeof(SuperM60Mod), "Super M60", "0.1.0", "Cyance")]
 [assembly: MelonGame("Radian Simulations LLC", "GHPC")]
 
 namespace SuperM60
