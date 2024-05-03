@@ -18,14 +18,14 @@ Pretty much WIP since I'm not sure about the exact goal of this mod
 | M900A1 APFSDS-T | 550 | - | 1505 | +35% spalling chance and +15% spalling performance |
 | M900A2 APFSDS-T*** | 580 | - | 1600 | Hypothetical round. +50% spalling chance and +100% spalling performance. ERA is only 35% effective. |
 | M456A3 HEAT-FS-T*** | 450 | - | 1174 | Hypothetical round. +100% spalling chance. ERA is only 25% effective. |
-| M393A3 HEP-T*** | 75* | 60** | 750 |  |
+| M393A3 HEP-T*** | 50* | 60** | 750 |  |
 | M2/M8 AP-T/I | 29 | - | 887 | Cupola HMG |
 
 
 <p>
 	<ul> 
 		<li>Values for Anti-ERA effects are a total guess</li>
-		<li>*These are HE rounds so actual penetration is not 75mm</li>
+		<li>*These are HE rounds so actual penetration is not actually one listed but the potential</li>
 		<li>**These are <i>up to</i> values so not every fragment will perform the same</li>
 		<li>***These have slightly less drag</li>
 	</ul>
