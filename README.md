@@ -3,11 +3,13 @@
 Pretty much WIP since I'm not sure about the exact goal of this mod
 
 - Modifies both M60A1 and M60A3 to hypothetical M60A4 upgrade
-- Gives improved optics to the main gun and cupola HMG
+- M60A3 has improved GPS and FLIR
+- M60A1 still has a manual rangefinder but improved optics
+- Cupola HMG has LRF*, stabilization, better ammo and optics.
 - Better ammo 
 - Better armor (+60% vs KE and +80% vs CE)
 - Better vehicle dynamics (1250 HP engine, improved transmission and suspension)
-- Optional better crew
+- Optional better crew (Loader, Gunner and Commander)
 - Limited mod configuration (MelonPreferences.cfg)
 
 ## Round types list:
@@ -28,3 +30,8 @@ Pretty much WIP since I'm not sure about the exact goal of this mod
 		<li>***These have slightly less drag</li>
 	</ul>
 </p>
+
+## KNOWN ISSUES / NOTE
+- Cupola HMG LRF only works for M60A3
+- Cupola HMG camera works properly once it has been ranged (manually or via LRF) at 100 meters or more
+- Armor improvement for the M60 applies to the entire turret and hull due to how the vanilla models are created
