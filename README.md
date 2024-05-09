@@ -1,4 +1,4 @@
-# Super M60 v0.1
+# Super M60 v0.2
 
 Pretty much WIP since I'm not sure about the exact goal of this mod
 
