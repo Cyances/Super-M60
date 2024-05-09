@@ -399,6 +399,7 @@ namespace SuperM60
 
                 roofUO.Alignment = OpticAlignment.FcsRange;
                 roofUO.ForceHorizontalReticleAlign = true;
+                roofUO.LocalElevationLimits = new Vector2(-17, 65);//-15 60
                 roofUO.RotateElevation = true;
                 roofUO.RotateAzimuth = true;
 
