@@ -34,7 +34,7 @@ namespace SuperM60
         public static AmmoCodexScriptable ammo_codex_m456a3;
         public static AmmoType ammo_m456a3;
 
-        public static AmmoType ammo_m833, ammo_m456;
+        public static AmmoType ammo_m833, ammo_m456, ammo_3of412;
 
         public static GameObject ammo_m900a1_vis = null;
         public static GameObject ammo_m900a2_vis = null;
@@ -77,6 +77,7 @@ namespace SuperM60
                 {
                     if (s.AmmoType.Name == "M833 APFSDS-T") ammo_m833 = s.AmmoType;
                     if (s.AmmoType.Name == "M456 HEAT-FS-T") ammo_m456 = s.AmmoType;
+                    if (s.AmmoType.Name == "3OF412 HE-T") ammo_3of412 = s.AmmoType;
                 }
 
                 var era_optimizations_m456a3 = new List<AmmoType.ArmorOptimization>() { };
@@ -202,9 +203,9 @@ namespace SuperM60
 
                 // m393a3
                 ammo_m393a3 = new AmmoType();
-                Util.ShallowCopy(ammo_m393a3, ammo_m456);
+                Util.ShallowCopy(ammo_m393a3, ammo_3of412);
                 ammo_m393a3.Name = "M393A3 HEP-T";
-                ammo_m393a3.RhaPenetration = 50f;
+                ammo_m393a3.RhaPenetration = 75f;
                 ammo_m393a3.MuzzleVelocity = 750f;//1099
                 ammo_m393a3.Mass = 11.3f;
                 ammo_m393a3.TntEquivalentKg = 5.26f;
@@ -218,11 +219,6 @@ namespace SuperM60
                 ammo_m393a3.SpallMultiplier = 2;
                 ammo_m393a3.DetonateSpallCount = hepFragments.Value;
                 ammo_m393a3.ForcedSpallAngle = 0;
-                ammo_m393a3.ImpactTypeFuzed = ParticleEffectsManager.EffectVisualType.MainGunImpactHighExplosive;
-                ammo_m393a3.ImpactTypeFuzedTerrain = ParticleEffectsManager.EffectVisualType.MainGunImpactExplosiveTerrain;
-                ammo_m393a3.ImpactTypeUnfuzed = ParticleEffectsManager.EffectVisualType.MainGunImpactHighExplosive;
-                ammo_m393a3.ImpactTypeUnfuzedTerrain = ParticleEffectsManager.EffectVisualType.MainGunImpactExplosiveTerrain;
-                ammo_m393a3.ShortName = AmmoType.AmmoShortName.He;
                 ammo_m393a3.Coeff = 0.16f;//19
                 ammo_m393a3.RhaToFuse = 15f;
 
@@ -281,17 +277,11 @@ namespace SuperM60
 
                 //m8
                 ammo_m8api = new AmmoType();
-                Util.ShallowCopy(ammo_m8api, ammo_m8vnl);
+                Util.ShallowCopy(ammo_m8api, ammo_m2apt);
                 ammo_m8api.CertainRicochetAngle = 15f;//5f;
-                ammo_m8api.MaxSpallRha = 8f;
-                ammo_m8api.MinSpallRha = 2f;
-                ammo_m8api.MuzzleVelocity = 887;
                 ammo_m8api.Name = "12.7x99mm M8 AP-I";
-                ammo_m8api.NutationPenaltyDistance = 0f;
-                ammo_m8api.MaxNutationPenalty = 0f;
-                ammo_m8api.RhaPenetration = 29f;
                 ammo_m8api.SpallMultiplier = 20f;
-                ammo_m8api.UseTracer = true;
+                ammo_m8api.UseTracer = false;
 
                 ammo_codex_m8api = ScriptableObject.CreateInstance<AmmoCodexScriptable>();
                 ammo_codex_m8api.AmmoType = ammo_m8api;
@@ -306,7 +296,6 @@ namespace SuperM60
                         ammo_codex_m8api,
                         ammo_codex_m8api,
                     };
-                clip_m8api.MinimalPattern[0] = ammo_codex_m8api;
 
                 clip_codex_m8api = ScriptableObject.CreateInstance<AmmoClipCodexScriptable>();
                 clip_codex_m8api.name = "clip_m8api";

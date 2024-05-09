@@ -67,7 +67,7 @@
       <HintPath>D:\Program Files\SteamLibrary\steamapps\common\Gunner HEAT PC\Bin\GHPC_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp_publicized">
-      <HintPath>C:\Users\Cyance\Documents\Desktop Shortcuts\SDK\GHPC\M6A2-ADATS\Assembly-CSharp_publicized.dll</HintPath>
+      <HintPath>C:\Users\Cyance\Documents\Desktop Shortcuts\SDK\GHPC\Super-M60\Assembly-CSharp_publicized.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
