@@ -255,8 +255,8 @@ namespace SuperM60
                 ammo_m2apt.MinSpallRha = 2f;
                 ammo_m2apt.MuzzleVelocity = 887;
                 ammo_m2apt.Name = "12.7x99mm M2 AP-T";
-                ammo_m2apt.NutationPenaltyDistance = 0f;
-                ammo_m2apt.MaxNutationPenalty = 0f;
+                //ammo_m2apt.NutationPenaltyDistance = 0f;
+                //ammo_m2apt.MaxNutationPenalty = 0f;
                 ammo_m2apt.RhaPenetration = 29f;
                 ammo_m2apt.SpallMultiplier = 10f;
                 ammo_m2apt.UseTracer = true;
